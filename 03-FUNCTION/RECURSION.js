@@ -19,8 +19,6 @@
 
 // Now 
 //2 * 1;
-
-
 // SEQUENCE
 
 /*Consider this puzzle: by starting from the number 1 and repeatedly either
@@ -43,6 +41,17 @@ function findSolution(target) {
             return find(current + 5, "(" + history + " + 5 )") ||
                 find(current * 3, "(" + history + " * 3)");
         }
-        return find(1, "1");
+        return find(13, "1");
     }
 }
+
+// findSolution(24)
+
+//  find(1, "1")
+//   find(6 , (1 + 5))
+//    find(11, ( ( 1 + 5 ) + 5 ))
+//     find(16 , (( 1 + 5 ) + 5 )) + 5)
+//      null
+//     find(33, "(((1 + 5) + 5) * 3)")
+//      null
+//     find(6 )
