@@ -1,12 +1,17 @@
-// my solution
-function range(start, end){
+function range(start, end, step = 1){
     let rangeArray = [];
-    for(var i = start ; i <= end; i++){
-        rangeArray.push(start++);      
+     if(step > 0){
+           for(let i = start ; i <= end; i += step){
+             rangeArray.push(i);      
+          }
+     }
+     else{
+         for(let j = start ; j >= end; j += step  ){
+             rangeArray.push(j)  
+          }
      }
      return rangeArray;
  }
- range(3,5);
  
  function sum(rangeFunc){
    return rangeFunc.reduce((a,b)=>{
@@ -14,6 +19,5 @@ function range(start, end){
      })
  }
  
- sum(range(1,10))
+ let c = sum(range(1, 10));
  
- // 55
