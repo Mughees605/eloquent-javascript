@@ -59,5 +59,22 @@ class List{
   }
 //   console.log(listToArray(arrayToList([10, 20, 30])));
 // → [10, 20, 30]
+
+function nth(list, n = 0){
+  let count = 0;
+  while(list){
+     if(count === n){
+        return list.value;
+     }
+     else{
+         count++;
+         list = list.next;
+     }
+  }
+}
+
+let c = nth(arrayToList([10,20,30]), 1);
+let v = arrayToList([10,20,30]);
+console.log(c);
    
    
