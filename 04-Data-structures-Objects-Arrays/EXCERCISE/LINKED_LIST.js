@@ -14,7 +14,7 @@ class List{
        }
        else{
          this._tail.next = node;
-         this._tail = node;
+         this._tail = this._tail.next;
          
        }
        return this._head;
@@ -36,6 +36,7 @@ class List{
        this.next = null;
       }  
    }   
+
    let createList = new List();
 
    function arrayToList(array){
@@ -46,7 +47,13 @@ class List{
    }
 
   function listToArray(listToConvert){
-    console.log(listToConvert)   
+    let node = listToConvert
+    let arr = []
+    while(node){
+        arr.push(node.value);
+        node = node.next
+    }
+    return arr;
   }
   listToArray(arrayToList([10,20]));
    
