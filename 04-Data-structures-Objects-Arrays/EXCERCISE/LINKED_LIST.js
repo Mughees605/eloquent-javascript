@@ -73,8 +73,19 @@ function nth(list, n = 0){
   }
 }
 
-let c = nth(arrayToList([10,20,30]), 1);
-let v = arrayToList([10,20,30]);
+let count = 0;
+function recursiveN(list, n){
+   if (count == n){
+      return list.value
+   }
+   else{
+     node = list.next;
+     count++;
+     return recursiveN(node, n)
+   }
+}
+
+let c = recursiveN(arrayToList([10,20,30]), 1);
 console.log(c);
    
    
