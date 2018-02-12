@@ -1,5 +1,13 @@
 // Abstractions hide details and give us the ability to talk about problems at a higher (or more abstract) level.
 
+let total = 0, count = 1;
+while (count <= 10) {
+  total += count;
+  count += 1;
+}
+console.log(total);
+
+console.log(sum(range(1, 10)));
 
 function repeat(n, action) {
     for (let i = 0; i < n; i++) {
@@ -18,3 +26,5 @@ function repeat(n, action) {
   })
   console.log(message) 
   // Loading.....
+  
+
