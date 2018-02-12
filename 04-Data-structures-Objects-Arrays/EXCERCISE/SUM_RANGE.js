@@ -19,5 +19,5 @@ function range(start, end, step = 1){
      })
  }
  
- let c = sum(range(1, 10));
- 
+ let c = sum(range(1, 10, 2));
+ console.log(c);

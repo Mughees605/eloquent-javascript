@@ -74,7 +74,6 @@ function nth(list, n = 0){
 }
 
 let c = nth(arrayToList([10,20,30]), 1);
-let v = arrayToList([10,20,30]);
 console.log(c);
    
    
