@@ -17,3 +17,5 @@ function speak(line){
 speak.call(rabbit, "HELLO");
 
 // The new and HELLO
+
+// The call() method calls a function with a given this value and arguments provided individually.
