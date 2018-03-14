@@ -1,4 +1,4 @@
 # eloquent-javascript
 
-#All folders according to the chapters
-Eloquent-javascript reading  
+#All folders according to the chapters 
+Eloquent-javascript(3rd Edition)
