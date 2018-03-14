@@ -1,0 +1,2 @@
+import Rabbit from './index';
+
