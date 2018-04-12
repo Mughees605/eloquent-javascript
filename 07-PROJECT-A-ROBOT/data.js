@@ -1,4 +1,4 @@
-export const roads = [
+export default roads = [
     "Alice's House-Bob's House",
     "Alice's House-Post Office",
     "Daria's House-Ernie's House",
