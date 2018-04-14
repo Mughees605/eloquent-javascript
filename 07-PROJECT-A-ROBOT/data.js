@@ -5,7 +5,6 @@ export default roads = [
     "Ernie's House-Grete's House",
     "Grete's House-Shop",
     "Marketplace-Post Office",
-    "Marketplace-Town Hall",
 ];
 "Alice's House-Cabin",
     "Bob's House-Town Hall",
