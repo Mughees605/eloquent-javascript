@@ -1,4 +1,4 @@
-export default roads = [
+let roads = [
     "Alice's House-Bob's House",
     "Alice's House-Post Office",
     "Daria's House-Ernie's House",
@@ -15,3 +15,16 @@ export default roads = [
     "Shop-Town Hall"
 
 ]
+
+function buildGraph(edges){
+  let graph = Object.create(null);
+s
+   function addEdge(from,to){
+      if(graph[from] == null){
+         graph[from] = [to]
+      }
+      else{
+          graph[from].push(to)
+      }
+   }
+}
