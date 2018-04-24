@@ -30,3 +30,4 @@ export default roads = [
         return graph;
       }
       
+      const roadGraph = buildGraph(roads);
