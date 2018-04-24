@@ -13,3 +13,15 @@ export default roads = [
     "Marketplace-Farm",
     "Marketplace-Shop",
     "Shop-Town Hall"
+
+    function buildGraph(edges) {
+        let graph = Object.create(null);
+       
+        for (let [from, to] of edges.map(r => r.split("-"))) {
+          addEdge(from, to);
+          addEdge(to, from);
+        }
+        return graph;
+      }
+      
+      const roadGraph = buildGraph(roads);
