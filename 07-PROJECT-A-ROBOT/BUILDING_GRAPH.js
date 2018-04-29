@@ -26,6 +26,7 @@ const roads = [
           }
           for (let [from, to] of edges.map(r => r.split("-"))) {
             addEdge(from, to);
+            addEdge(to, from)
           }
           return graph;
         }
