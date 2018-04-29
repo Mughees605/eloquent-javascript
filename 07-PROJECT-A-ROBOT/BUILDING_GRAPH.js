@@ -31,7 +31,4 @@ const roads = [
           return graph;
         }
         
-        const roadGraph = buildGraph(roads);
-  
-        console.log(roadGraph)
-  
+export const roadGraph = buildGraph(roads);  
