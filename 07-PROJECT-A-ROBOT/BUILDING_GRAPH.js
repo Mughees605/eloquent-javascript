@@ -16,7 +16,7 @@ const roads = [
     "Shop-Town Hall"
   ]
       function buildGraph(edges) {
-          let graph = Object.create(null);
+          let graph = Object.create(null); // graph object with no prototype
           function addEdge(from, to) {
             if (graph[from] == null) {
               graph[from] = [to];
