@@ -11,5 +11,6 @@ class VillageState{
       if(!roadGraph[this.place].includes(destination)){
         return this
       }
+      //else it creates a new state
     }
 }
