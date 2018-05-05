@@ -21,3 +21,9 @@ class VillageState {
     }
   }
 }
+
+let first = new VillageState(
+  "Post Office",
+  [{place: "Post Office", address: "Alice's House"}]
+  );
+ 
